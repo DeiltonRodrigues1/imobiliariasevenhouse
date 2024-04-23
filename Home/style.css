@@ -1,0 +1,239 @@
+
+.logo {
+    display: flex; /* Usar flexbox para controlar o layout */
+    align-items: center; /* Alinhar os elementos verticalmente */
+    margin-right: 10px; /* Adiciona espaçamento à direita da logo */
+}
+
+.logo img {
+    margin-right: 10px; /* Adicionar margem entre a logo e o texto */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adiciona sombreado ao título */
+}
+
+.logo h1 {
+    margin: 0; /* Remover margem padrão do h1 */
+    font-size: 1.5rem; /* Tamanho da fonte do nome da empresa */
+    font-family:'Lato', sans-serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adiciona sombreado ao título */
+}
+.company-name {
+    margin-top: 10px; /* Adiciona espaçamento acima do nome da empresa */
+}
+header {
+    background-color: #505152; /* Cor de fundo do cabeçalho */
+    color: #fff; /* Cor do texto */
+    padding: 8px 0; /* Espaçamento interno do cabeçalho */
+    
+}
+body {
+    background-color: #8993a1; /* Cor de fundo desejada */
+}
+.container {
+    display: flex; /* Usar display flex para alinhar os elementos horizontalmente */
+    justify-content: space-between; /* Distribuir os elementos horizontalmente */
+    align-items: center; /* Alinhar verticalmente os elementos */
+    
+}
+.container1 {
+    text-align: center; /* Centraliza todo o texto dentro do elemento */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Adiciona sombreado ao parágrafo */
+}
+
+.container1 h2 {
+    font-family: 'Lato', sans-serif; /* Define a fonte para o título */
+    color: #fffffe; /* Define a cor do título */
+    font-size: 24px; /* Define o tamanho da fonte do título */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adiciona sombreado ao título */
+}
+
+.container1 p {
+    font-family: Arial, sans-serif; /* Define a fonte para o parágrafo */
+    color: #f7f0f0; /* Define a cor do parágrafo */
+    font-size: 16px; /* Define o tamanho da fonte do parágrafo */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* Adiciona sombreado ao parágrafo */
+}
+.container {
+    display: flex;
+}
+
+.card-container {
+    display: flex; /* Usar display flex para alinhar os cards horizontalmente */
+
+}
+.cardTitle {
+    text-align: center;
+    background-color: #c4cbce;
+    padding: 9px;
+    margin-left: 9px;
+    margin-right: 9px;
+    font-family: 'Lato', sans-serif;
+    animation: pulse 2s infinite;
+}
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    25% {
+        transform: scale(1.05);
+    }
+    50% {
+        transform: scale(1);
+    }
+}
+
+.card {
+    width: 300px; /* Largura fixa para os cards */
+    padding: 20px;
+    border-radius: 5px; /* Borda arredondada */
+    background-color: #d7dac6; /* Cor de fundo */
+    margin-right: 20px; /* Adiciona uma margem à direita do card */
+    margin-bottom: 20px; /* Adiciona uma margem na parte inferior do card */
+    display: inline-block; /* Faz com que os cards se comportem como elementos inline, permitindo alinhamento horizontal */
+    vertical-align: top; /* Alinha os cards pela parte superior */
+    height: 800px; /* Define uma altura fixa para todos os cards */
+    overflow: hidden; /* Esconde o conteúdo que ultrapassar a altura definida */
+    box-sizing: border-box; /* Garante que a altura inclua padding e borda */
+    transition: transform 0.3s ease; /* Adiciona uma transição suave ao transformar o card */
+    cursor: pointer; /* Muda o cursor para indicar que o card é clicável */
+}
+.card:hover {
+    transform: scale(1.05); /* Aumenta o tamanho do card ao passar o mouse sobre ele */
+}
+.card.scrolled {
+    overflow-y: scroll; /* Adiciona uma barra de rolagem vertical quando o card é rolado */
+}
+.card img {
+    max-width: 100%; /* Define a largura máxima da imagem como 100% do tamanho do card */
+    max-height: 100%; /* Define a altura máxima da imagem como 100% do tamanho do card */
+    display: block; /* Para garantir que a imagem respeite as dimensões máximas */
+    margin: auto; /* Para centralizar a imagem horizontalmente */
+}
+
+
+.space {
+    width: 20px; /* Espaço entre os cards */
+}
+
+
+.logo img {
+    max-width: 100px; /* Definir a largura máxima do logotipo */
+    height: auto; /* Manter a proporção da imagem */
+}
+
+nav a {
+    color: #fff; /* Cor do texto dos links */
+    text-decoration: none; /* Remover sublinhado dos links */
+    margin-right: 20px; /* Espaçamento entre os links */
+}
+
+.social button {
+    background-color: transparent; /* Cor de fundo transparente */
+    border: none; /* Remover borda */
+    margin-left: 10px; /* Espaçamento entre os botões de mídia social */
+    cursor: pointer; /* Cursor de ponteiro ao passar o mouse */
+    width: 70px !important;
+    height: 70px !important;
+}
+
+.social button:hover {
+    color: #0382a8; /* Cor do ícone ao passar o mouse */
+}
+.social button i {
+    font-size: 20px; /* Tamanho do ícone */
+}
+/* Estilos para dispositivos móveis (max-width: 767px) */
+/* Estilos para dispositivos móveis (max-width: 767px) */
+
+
+/*Footer*/
+footer {
+    background-color: #505152; /* Cor de fundo do cabeçalho */
+    color: #fff; /* Cor do texto */
+    padding: 8px 0; /* Espaçamento interno do cabeçalho */
+    
+}
+@media only screen and (max-width: 767px) {
+    .container {
+        display: flex;
+        flex-direction: column; /* Alinhar os elementos verticalmente */
+        align-items: center; /* Centralizar os elementos horizontalmente */
+    }
+
+    .logo, .menu, .social {
+        margin-bottom: 10px; /* Adicionar espaçamento entre os elementos */
+    }
+}
+
+
+/*Sobre*/
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateX(-40px); /* Animação de deslize */
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0); /* Retorna à posição original */
+    }
+  }
+
+  .imagem-e-texto {
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    align-items: flex-start; /* Alinha os itens ao topo do container */
+    position: relative; /* Para posicionar o texto em relação à imagem */
+  }
+
+  .imagem-e-texto img {
+    animation: fadeIn 2s ease forwards; /* Reduzindo o tempo de animação */
+    opacity: 0; /* Inicialmente oculta a imagem */
+    width: 100%; /* Ajusta a largura da imagem */
+  }
+
+  .texto {
+    overflow: hidden;
+    animation: fadeIn 1s ease forwards; /* Aplica a animação de fade-in */
+    opacity: 0; /* Inicialmente oculta o texto */
+    position: absolute; /* Posiciona o texto em relação ao container pai */
+    top: 15%; /* Alinha o texto ao meio verticalmente */
+    left: 0.2%; /* Alinha o texto ao meio horizontalmente */
+    right: 0.4%;
+    transform: translate(-50%, -50%) perspective(1000px) rotateX(10deg); /* Centraliza o texto e aplica efeito 3D */
+    z-index: 1; /* Garante que o texto fique acima da imagem */
+    background-color: rgba(63, 60, 60, 0.7); /* Adiciona um fundo branco semi-transparente ao texto */
+    padding: 0px; /* Adiciona espaçamento interno ao texto */
+    width: 100%; /* Ajusta a largura do texto */
+    text-align: center; /* Centraliza o texto horizontalmente */
+  }
+
+  .texto h2 {
+    font-size: 30px;
+    color: aliceblue;
+    margin-top: 0;
+    text-align: center;
+  }
+
+  .texto p {
+    font-size: 20px;
+    color: aliceblue;
+  }
+
+  @media (max-width: 768px) {
+    .imagem-e-texto {
+      flex-direction: column;
+    }
+
+    .imagem-e-texto img,
+    .texto {
+      width: 100%; /* Ajusta a largura para ocupar 100% da tela */
+      position: static; /* Remove a posição absoluta */
+      transform: none; /* Remove a transformação */
+    }
+
+    .texto {
+      margin-top: 20px; /* Adiciona um espaçamento entre a imagem e o texto */
+      left: 0; /* Alinha o texto à esquerda */
+      width: auto; /* Define a largura automática para ocupar a largura total */
+    }
+  }
